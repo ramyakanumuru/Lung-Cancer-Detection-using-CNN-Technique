@@ -1,0 +1,123 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #141414;
+    color: #ffffff;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    padding: 2.5em;
+    background-color: #222222; /* Darker Netflix background */
+    border-radius: 12px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Title styling */
+.container h1 {
+    font-size: 2.2em;
+    margin-bottom: 1em;
+    color: #e50914; /* Netflix red */
+    font-weight: 600;
+}
+
+/* Form styling */
+form {
+    margin: 1.5em 0;
+}
+
+form input[type="file"] {
+    padding: 0.7em;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #333333; /* Dark input background */
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form input[type="file"]:hover {
+    background-color: #444444;
+    color: #e50914;
+}
+
+/* Predict button styling */
+form button {
+    padding: 0.9em 2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #e50914; /* Netflix red */
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1.2em;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #f40612; /* Slightly lighter red on hover */
+    transform: scale(1.05);
+}
+
+/* Result styling */
+.result {
+    margin-top: 2em;
+    background-color: #333333; /* Darker gray for result box */
+    padding: 1.2em;
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Result text styling */
+.result h2 {
+    font-size: 1.6em;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Additional styling for links */
+a {
+    color: #e50914; /* Netflix red for links */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
